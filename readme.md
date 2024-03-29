@@ -4,10 +4,10 @@ bonjour je suis obiang essone prostony je vous presente la maket de la page d'ac
  
 ![Alt text](image/tony.PNG)
 
-comme on n'a  pue le voir  il est commeposer d'une e tete  de page avec un grand fond blanc ou je me presente et je presente les different projet 
-# chartes graphique et typographique
+Comme on a  pu le voir  il est composé d'une entête de page avec un grand fond blanc où je me présente et je présente les differents projets.
+# Chartes graphique et typographique
 ![Alt text](image/colorse.png)
-# police de d'ecriture
+# Police d'écriture
 ![Alt text](image/Capture2.PNG)
 
 Gloomap

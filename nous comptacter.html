@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio </title>
-    <link rel="stylesheet" href="./css/style.css"/>
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio </title>
+  <link rel="stylesheet" href="./css/style.css" />
+
 
 </head>
+
 <body>
-   <nav>
-       <div class="profile">
-            <img src="image/logo.jpg" alt="profile photo">
-            <h1>obiang essone prosotony</h1>  
-       </div>
-       <ul>
-             <li><a href="index.html">Accueil</a></li>
-           <li> <a href="projets.html">mes projets</a></li>
-           <li><a href="nous comptacter.html">nous comptacter</a></li>
-       </ul>
-   </nav>   
-   <div class="content">
+  <nav>
+    <div class="profile">
+      <img src="image/logo.jpg" alt="profile photo">
+      <h1>obiang essone prosotony</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li> <a href="projets.html">mes projets</a></li>
+      <li><a href="nous comptacter.html">nous comptacter</a></li>
+      <li><a href="veiille.html">veiille technologique</a></li>
+    </ul>
+  </nav>
+  <div class="content">
     <form action="#" method="post" enctype="application/x-www-form-urlencoded" name="formulaire" class="contactform">
-  
+
       <div class="iconblock">
         <input type="text" name="nom" size="45" maxlength="100" placeholder="Name" required>
         <span class="icon-validation"></span>
       </div>
-  
+
       <div class="iconblock">
         <input type="email" name="mail" size="45" maxlength="100" placeholder="Email" required>
         <span class="icon-validation"></span>
       </div>
-  
+
       <div class="iconblock">
         <input type="text" name="telephone" size="45" maxlength="15" placeholder="Phone" required>
         <span class="icon-validation"></span>
       </div>
-  
+
       <div class="iconblock">
         <textarea name="message" cols="50" rows="10" placeholder="Message" required></textarea>
         <span class="icon-validation"></span>
@@ -46,53 +49,57 @@
     </form>
     <a href="#" class="read-more">Send</a>
   </div>
-   
 
 
-   <footer>
+
+  <footer>
     <div class="colonne">
-        <h3>Mes services</h3>
-        <p>Développement de projet hmtl css java</p>
-        <p>Prestation en html css php</p>
+      <h3>Mes services</h3>
+      <p>Développement de projet hmtl css java</p>
+      <p>Prestation en html css php</p>
     </div>
-    
+
     </div>
     <div class="colonne">
-        <h3>Mes adresses</h3>
-        <p>obaingprostony1@gmail.com</p>
-        <p>prosotnyobiangessone3@gmail.com</p>
+      <h3>Mes adresses</h3>
+      <p>obaingprostony1@gmail.com</p>
+      <p>prosotnyobiangessone3@gmail.com</p>
     </div>
-</footer>
+  </footer>
 </body>
+
 </html>
 <style>
-    html {
-  background: #1d1f20;
-}
-.content {
-  width: 500px;
-  max-width: 100%;
-  margin: 20px auto;
-  text-align: center;
-}
+  html {
+    background: #1d1f20;
+  }
 
-.contactform input[type="text"],.contactform input[type="email"], .contactform textarea {
+  .content {
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .contactform input[type="text"],
+  .contactform input[type="email"],
+  .contactform textarea {
     display: block;
     width: 100%;
     margin: 0px auto 10px;
     padding: 15px 15px 15px 35px;
     border: 0;
-    background: rgba(255,255,255,1);
+    background: rgba(255, 255, 255, 1);
     border: 1px solid #1c6ec3;
     color: #1c6ec3;
     outline: none;
-}
+  }
 
-.iconblock {
+  .iconblock {
     position: relative;
-}
+  }
 
-:invalid + .icon-validation::before {
+  :invalid+.icon-validation::before {
     display: block;
     content: '\f06a';
     font-family: fontAwesome;
@@ -100,9 +107,10 @@
     top: 15px;
     left: 10px;
     font-size: 1.2em;
-    color: rgba(255,0,0,0.5);
-}
-:valid + .icon-validation::before {
+    color: rgba(255, 0, 0, 0.5);
+  }
+
+  :valid+.icon-validation::before {
     display: block;
     content: '\f058';
     font-family: fontAwesome;
@@ -110,17 +118,20 @@
     top: 15px;
     left: 10px;
     font-size: 1.2em;
-    color: rgba(19,209,19,0.5);
-}
-.contactform textarea {
+    color: rgba(19, 209, 19, 0.5);
+  }
+
+  .contactform textarea {
     min-height: 100px;
     padding-top: 15px;
     margin-bottom: 20px;
-}
-.contactform textarea:focus{
-	outline:none;
-}
-.read-more {
+  }
+
+  .contactform textarea:focus {
+    outline: none;
+  }
+
+  .read-more {
     padding: 6px 15px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     background: #1c6ec3;
@@ -133,18 +144,36 @@
     -moz-transition: all .5s;
     transition: all .5s;
     font-size: 22px;
-}
-.read-more:hover {
+  }
+
+  .read-more:hover {
     background: #d52c22;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
-}
+  }
 
-.contactform input:-moz-placeholder { color: #84b3d5; }
-.contactform input:-ms-input-placeholder { color: #84b3d5; }
-.contactform input::-webkit-input-placeholder { color: #84b3d5; }
-.contactform textarea:-moz-placeholder { color: #84b3d5; }
-.contactform textarea:-ms-input-placeholder { color: #84b3d5; }
-.contactform textarea::-webkit-input-placeholder { color: #84b3d5; }
+  .contactform input:-moz-placeholder {
+    color: #84b3d5;
+  }
+
+  .contactform input:-ms-input-placeholder {
+    color: #84b3d5;
+  }
+
+  .contactform input::-webkit-input-placeholder {
+    color: #84b3d5;
+  }
+
+  .contactform textarea:-moz-placeholder {
+    color: #84b3d5;
+  }
+
+  .contactform textarea:-ms-input-placeholder {
+    color: #84b3d5;
+  }
+
+  .contactform textarea::-webkit-input-placeholder {
+    color: #84b3d5;
+  }
 </style>
