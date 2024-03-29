@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Oswald:wght@300&display=swap');
+html{
+	font-size: 62,5%;
+}
+body{
+
+    padding: 0 2%;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+nav{
+    display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+	z-index: 10;
+    top: 0;
+}
+nav .profile{
+    display:flex ;
+    align-items: center;
+}
+nav .profile img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+nav .profile h1{
+    margin-left: 1rem;
+    font-size: 1,5px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin-left: 2rem;
+    cursor: pointer;
+    border-bottom: 0,1rem solid #fff;
+	
+	
+}
+nav ul li a{
+	display: block;
+	padding: 1rem;
+	border-radius: .4rem;
+}
+nav ul li:hover a{
+    border-bottom-color:black ;
+	
+}
+.page-content {
+	margin: 4%;
+}
+.page-content header {
+	margin-top: 5%;
+	max-width: 80%;
+}
+.page-content header h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 6vw;
+}
+.page-content header p {
+	line-height: 0,3rem;
+	color: #818181;
+}
+.page-content header button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	padding: 0;
+	font-size: 1,5rem;
+	font-weight: bold;
+	padding-bottom: 0,5rem;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.page-content header button:hover {
+	color: #ccc;
+	border-bottom-color: #000;
+}
+.page-content .presentation-image {
+	margin-top: 5%;
+}
+.page-content .presentation-image img {
+	max-width: 100%;
+	height: auto;
+    transition: filter 0.5s; 
+}
+.page-content .presentation-image img:hover{
+    filter: brightness(50%);
+}
+.page-content .presentation-image {
+	margin-top: 5%;
+}
+.page-content .presentation-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.page-content .projects-section {
+	margin-top: 6%;
+}
+.page-content .projects-section h1 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+.page-content .projects-section .projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+.page-content .projects-section .project {
+	margin-right: 2rem;
+	max-width: 19,5rem;
+}
+.page-content .projects-section .project h4 {
+	margin: 0;
+}
+.page-content .projects-section .project .description {
+	font-size: 1rem;
+}
+.page-content .projects-section .project .dates {
+	font-size: 13px;
+	color: rgb(145, 145, 145);
+}
+footer {
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 1rem;
+	background-color: #000;
+	color: white;
+}
+footer .colonne p {
+	font-size: 1,2rem;
+	color: #ccc;
+	cursor: pointer;
+}
+footer .colonne p:hover {
+	color: #fff;
+}
+
+
+
+@media screen and (max-width: 75rem) {
+ nav{
+    justify-content: center;
+ }
+    nav ul{
+        display: none;
+    }
+    .page-content header {
+		margin-top: 10%;
+		max-width: 100%;
+	}
+}
