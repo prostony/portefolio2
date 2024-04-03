@@ -20,6 +20,9 @@ nav{
 	z-index: 10;
     top: 0;
 }
+h1{
+	text-align: center;
+}
 nav .profile{
     display:flex ;
     align-items: center;
@@ -30,6 +33,7 @@ nav .profile img{
     border-radius: 50%;
 }
 nav .profile h1{
+	
     margin-left: 1rem;
     font-size: 1,5px;
 }
