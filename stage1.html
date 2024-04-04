@@ -7,6 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="portfolio developpement...">
     <title>portfolio </title>
+    <style>
+        .sousTitreProjets {
+            margin-top: 4%;
+        }
+    
+        .ligne1 {
+            margin-bottom: 3%;
+        }
+    
+        .vignette1,
+        .vignette2 {
+            border: 1px solid black;
+            padding: 1rem;
+            background-color: white;
+            flex: 0 0 40%;
+            max-width: 80rem;
+            margin: 0 auto;
+        }
+    
+    
+        #imageVignette,
+        .ligne1,
+        h5 {
+            margin-top: 3%;
+        }
+    
+        .outilsLang {
+            font-weight: bolder;
+        }
+    
+        .documentation,
+        .site {
+            background-color: #343a40;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 10px;
+        }
+    
+        .site {
+            margin-top: 5%;
+        }
+    
+        a:hover {
+            text-decoration: none;
+            color: white;
+            background-color: #a9b0b8;
+        }
+
+        @media (min-width:992px) {
+            .col-lg-3 {
+                flex: 0 0 40%;
+                max-width: 40%;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="./css/style.css" />
 
 </head>
@@ -14,7 +69,7 @@
 <body>
     <nav>
         <div class="profile" role="group" aria-labelledby="title">
-            <img src="./image/logo.jpg" alt="profile photo" loading="lazy">
+            <img src="image/logo.jpg" alt="profile photo" loading="lazy">
             <h1 id="title">obiang essone prosotony</h1>
         </div>
         <ul>
@@ -28,20 +83,59 @@
             
         </ul>
     </nav>
-    <footer>
-        <div class="colonne">
-            <h3>Mes services</h3>
-            <p>Développement de projet hmtl css java</p>
-            <p>Prestation en html css php</p>
+
+        <h1>TP 1ére année</h1>
+        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 vignette2">
+            <h3>Exodus Technology  </h3>
+            <img src="image/Urbanmarginal.png" class="imageVignette" alt="Image du jeu Urban Marginal" />
+            <h5><br>
+                <br>
+                <span class="outilsLang"></span>stage2
+            <br><br>
+                
+                <a class="site" href="stageUN.html">plus informations
+                    </a>
+            </h5>
         </div>
 
+
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 vignette2">
+            <h3>Exodus Technology  </h3>
+            <img src="image/Urbanmarginal.png" class="imageVignette" alt="Image du jeu Urban Marginal" />
+            <h5><br>
+                <br>
+                <span class="outilsLang"></span>stage2
+            <br><br>
+                
+                <a class="site" href="stage2.html">plus informations
+                    </a>
+            </h5>
         </div>
-        <div class="colonne">
-            <h3>Mes adresses</h3>
-            <p>obaingprostony1@gmail.com</p>
-            <p>prosotnyobiangessone3@gmail.com</p>
-        </div>
+    </div>
+    
+        
+   
+
+
+
+
+        <footer>
+            <div class="colonne">
+                <h3>Mes services</h3>
+                <p>Développement de projet hmtl css java</p>
+                <p>Prestation en html css php</p>
+            </div>
+
+    </div>
+    <div class="colonne">
+        <h3>Mes adresses</h3>
+        <p>obaingprostony1@gmail.com</p>
+        <p>prosotnyobiangessone3@gmail.com</p>
+    </div>
     </footer>
 </body>
 
 </html>
+
