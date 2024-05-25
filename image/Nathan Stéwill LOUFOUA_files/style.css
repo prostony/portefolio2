@@ -1,0 +1,253 @@
+@import url(responsive.css);
+@import url(navigation.css);
+@import url(reset.css);
+@import url(footer.css);
+@import url(about.css);
+@import url(animation.css);
+
+
+.btn{
+    width: 6.25rem;
+    height: 2.5rem;
+    background: #0088ff;
+    border: 0.125rem solid #0088ff;
+    margin-top: 0.8125rem;
+    color: #fff;
+    font-size: 0.9375rem;
+    border-bottom-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+/*partionnment de la page */
+.content{
+    width: 86%;
+    max-width: 94%;
+    height: 100vh;
+    margin:0 auto;
+    color: #fff;
+}
+
+.main_container {
+    /*width: 75rem;*/
+    width: 86%;
+    max-width: 96%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    color: #fff;
+    overflow: scroll;
+}
+
+.present_stage {
+  width: 100%;
+  display: flex; gap:2.5rem; flex-direction: row;
+}
+
+.stage_article {
+  width: 40%;
+  /*border : #ff7200 solid thick;*/
+  border-radius: 2%;
+  height: 12.2rem;
+}
+
+.first {
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../asset/LOGO-ONG.png);
+  background-repeat: no-repeat;
+  background-position: center, left ;
+  background-size: contain;
+}
+.second {
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../asset/Enerlis.gif);
+  background-repeat: no-repeat;
+  background-position: center,top left ;
+  background-size: cover, contain;
+
+}
+.par {
+    text-align: justify;
+    padding-bottom: 1.5625rem;
+    font-family: Arial;
+    letter-spacing: 0.075rem;
+    line-height: 1.875rem;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 3.125rem;
+    margin-top: 9%;
+    letter-spacing: 0.125rem;
+}
+
+.content span{
+    color: #0088ff;
+    font-size: 4.0625rem
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 1.875rem;
+    padding-left: 0.875rem;
+    padding-top: 0.3125rem;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #0088ff;
+}
+
+
+.CONTACT {
+    justify-content: center;
+    align-items: center;
+}
+.bonjour {
+  display: flex;
+}
+.bonjour::before,
+.bonjour::after {
+    border-top: .0625em solid;
+    content: "";
+    flex: 0.5;
+    margin: 0.5em;
+}
+  /*Partie Projets*/
+
+  .PROJETS {
+    overflow-y: hidden;
+  }
+  /*.container_projets {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .list_projets {
+    display:  flex;
+    max-width: fit-content;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin: 0 auto;
+  }
+  .list_projets article {
+    max-width: 448px;
+    border: #ff7200 solid thick;
+    border-radius: .3rem;   
+  }
+  .image_projets img{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .info_projets {
+    padding: .9rem;
+    text-align: justify;
+  }
+*/
+/*tout esst remplacé par le W3css */
+  .btn2_projets {
+    display: block;
+    width: 50%;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #0088ff;
+    color: white;
+    font-size: inherit;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .3rem;
+    text-decoration: none;
+    line-height: 50px;
+  }
+
+  .btn2_projets:hover {
+    background-color: #ff7200;
+  }
+  
+  /*.content*/ .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    font-size: inherit;
+    font-weight: bold;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.presentation_projets {
+    overflow-y: scroll;    
+}
+.presentation_projets::-webkit-scrollbar {
+    display: none;
+}
+strong {
+    color: #ff7200;
+}
+
+b {
+    color: springgreen;
+}
+
+.border {
+  height: 100px;
+  width: 200px;
+  background: linear-gradient(90deg, blue 50%, transparent 50%),
+              linear-gradient(90deg, blue 50%, transparent 50%),
+              linear-gradient(0deg, blue 50%, transparent 50%),
+              linear-gradient(0deg, blue 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+  background-position: 0px 0px, 212px 116px, 0px 116px, 216px 0px;
+  padding: 10px;
+  transition: background-position 2s;
+}
+
+.border:hover {
+  background-position: 212px 0px, 0px 116px, 0px 0px, 216px 116px;
+}/*
+
+.border {
+  height: 100px;
+  width: 200px;}
+
+  .border{
+  background: linear-gradient(90deg, blue 50%, transparent 50%),
+              linear-gradient(90deg, blue 50%, transparent 50%),
+              linear-gradient(0deg, blue 50%, transparent 50%),
+              linear-gradient(0deg, blue 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+  background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+  padding: 10px;
+  animation: border-dance 4s infinite linear;
+}
+
+@keyframes border-dance {
+  0% {
+    background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
+  }
+  100% {
+    background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
+  }
+}
+*/
