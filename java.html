@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio developpement...">
+    <title>portfolio </title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="profile" role="group" aria-labelledby="title">
+            <img src="./image/logo.jpg" alt="profile photo" loading="lazy">
+            <h1 id="title">obiang essone prosotony</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li> <a href="projets.html">mes projets</a></li>
+            <li><a href="nous comptacter.html">nous contacter</a></li>
+            <li><a href="veille.html">veille technologique</a></li>
+            <li><a href="stages.html">mes stages</a></li>
+ 
+        </ul>
+    </nav>
+    <section class="content presentation_projets">
+        <h1>PRÉSENTATION DU PROJET PERSONNEL<br><span>JAVA</span><br>Gestion des Employés des Ligues</h1>
+        
+        <h1>AP : Gestion des Employés des Ligues</h1>
+
+        <p class="par"> 
+            
+                <strong>Introduction</strong><br>
+                Le projet <em>M2L</em>, développé dans le cadre de ma 2e année en formation <abbr title="Brevet de technicien supérieur">BTS</abbr> 
+                <abbr title="Services informatiques aux organisations">SIO</abbr> option 
+                <abbr title="Solution logiciel application et métiers">SLAM</abbr>, vise à mettre en place une application 
+                de gestion des employés des ligues sportives. Voici les éléments clés du projet :
+        </p>
+        <p class="par">
+            <strong>Contexte :</strong>
+            Un responsable de la Maison des Ligues (M2L) utilise actuellement une application pour gérer les 
+            employés des différentes ligues.
+            Cette application est accessible via les ressources mises à notre disposition sur notre plaeforme
+            de formation
+        </p>
+
+        <p class="par">
+            <strong>Objectif :</strong>
+            L’objectif est de désigner un administrateur par ligue qui sera chargé de recenser les employés de sa
+             propre ligue. Le travail est partiellement achevé, notre mission consiste à le compléter.
+             Et pour meiux visualiser l'ordonnancement un arbre Heuristique a été fait 
+
+            </p><li class="par">
+                <img src="image/ppejava.png" alt="Arbre_heuristique" style="width: 90%;"> 
+            </li> 
+        <p></p>
+
+        <p class="par">
+            <strong>Niveaux d’habilitation des utilisateurs :</strong>
+            </p><li class="par">
+                Employé de ligue :
+                Peut utiliser l’application comme un annuaire, mais n’a pas de droits d’écriture.</li>
+            <li class="par">
+                Employé par ligue (administrateur) :
+                Peut gérer la liste des employés de sa ligue à l’aide d’une application bureau.
+            </li>
+            <li class="par">
+                Super-administrateur :
+                A accès en écriture à tous les employés des ligues.
+                Peut également gérer les comptes des administrateurs des ligues via une application en ligne
+                 de commande.
+            </li>
+            <li class="par">
+                <img src="image/MCD_MDL.png" alt="MCD_M2L" style="width: 90%;"> 
+            </li>
+            
+            <li class="par">
+                Ce MCD CI-DESSUS traduit le niveau d'habilitsation <br>
+                <strong>EXPLICATION DES RELATIONS :</strong><br>
+                &gt; Il ya deux entités une entité <b>LIGUE</b> et <b>EMPLOYE</b>
+                &gt; les deux entités sont liées par des associations <b>COMPOSER()</b> et <b>SUPERVISER()</b>
+                <br><strong>Cardinalité</strong>
+                <b>COMPOSER(0,n)</b>  du côté Ligue signifie que La ligue peut être composé de 0 ou plusieurs employés
+                <b>(0,1)</b>du côté Employé signifie qu'un employé appartient au plus à une Ligue.
+                <b>SUPERVISER (0,1)</b> côté LIGUE signifie qu'une ligue ne peut etre supervisé que par zéro ou un employé<strong>(Admin de la ligue)</strong>.
+                - le cas Zéro est là pour traduire le fait que lorsque la ligue n'a pas d'employés elle est supervisée par le **ROOT**
+                <b>SUPERVISER(0,1)</b> côté <mark>EMPLOYE</mark>  signifie qu'un employé par LIGUE est Admin et qu'il n'administre que sa ligue.
+                Autrement dit un employé ne gere que 0 ou 1 ligue.
+                Le seul employé à gerer plusieurs ligues c'est le <strong>ROOT</strong>
+            </li>
+        <p></p>
+
+        <p class="par">
+            <strong>Architecture :</strong>
+            L’application suit une architecture <b>3-tiers</b> que nous devons conserver.
+            Elle sera rendue multi-utilisateurs grâce à l’utilisation d’une base de données.
+        </p>
+
+        <p class="par">
+            En résumé, le projet M2L permettra une gestion efficace des employés des ligues 
+            sportives tout en respectant les niveaux d’habilitation définis.
+        </p>
+        <br>
+        <h3>
+            VOICI CE QUE ça DONNE EN <abbr title="Integrate Development Environnement">IDE</abbr>
+        </h3>
+        <p class="par">
+            Comme le projet est configuré pour fonctionner que sous Eclipse par conséquent il est notre principale
+            de developpement.
+        </p>
+        <li class="par">
+            <img src="image/Eclipse1.png" alt="Arbre_heuristique" style="width: 90%;"> 
+        </li>
+        <li class="par">
+            <img src="image/Eclipse2.png" alt="Arbre_heuristique" style="width: 90%;"> 
+        </li>
+
+        <section class="list_projets">
+            <article id="image_projets" class="image_projets">
+                <img src="image/Eclipse3.png" alt="Arbre_heuristique">
+            </article>
+            <article class="info_projets">
+                <img src="image/Eclipse4.png" alt="Arbre_heuristique">
+            </article><!-- comment -->
+        </section>
+        <br>
+        <form action="https://github.com/LSDORA/personnelProject">
+            <button class="cn">VOIR CODE SOURCE</button>
+        </form>
+        <br>
+
+
+    </section>
+    <footer>
+        <div class="colonne">
+            <h3>Mes services</h3>
+            <p>Développement de projet hmtl css java</p>
+            <p>Prestation en html css php</p>
+        </div>
+
+        </div>
+        <div class="colonne">
+            <h3>Mes adresses</h3>
+            <p>obaingprostony1@gmail.com</p>
+            <p>prosotnyobiangessone3@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<style>
